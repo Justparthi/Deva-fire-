@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7f2" />
+    <meta name="description" content="A tiny little note for Chechi." />
+    <title>For Chechi, with love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Start over">
+          <span class="brand-mark">♡</span>
+          <span>for chechi</span>
+        </a>
+        <div class="progress-label" aria-live="polite">
+          <span id="stepCurrent">01</span><span class="progress-slash">/</span
+          ><span>04</span>
+        </div>
+      </header>
+
+      <section class="progress-track" aria-label="Message progress">
+        <span id="progressBar"></span>
+      </section>
+
+      <section class="story" aria-live="polite">
+        <div class="screen active" data-screen="0">
+          <div class="eyebrow"><span class="sparkle">✦</span> a tiny note for you</div>
+          <h1>Hey<br /><em>Chechi.</em></h1>
+          <p class="lead">
+            I made you a little corner of the internet because some feelings
+            are too big for a normal text.
+          </p>
+          <button class="primary-button next-button">
+            Open your note <span>↗</span>
+          </button>
+          <div class="floating-shape shape-heart" aria-hidden="true">♥</div>
+          <div class="floating-shape shape-dot" aria-hidden="true"></div>
+          <div class="floating-shape shape-star" aria-hidden="true">✦</div>
+        </div>
+
+        <div class="screen" data-screen="1">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> be honest with me</div>
+          <h2>Do you know how<br /><em>much I miss you?</em></h2>
+          <p class="lead">Like, “checking my phone for no reason” kind of miss you.</p>
+          <div class="choice-card">
+            <button class="choice choice-yes" data-choice="yes">
+              <span class="choice-icon">♡</span>
+              <span>Yes, I know</span>
+            </button>
+            <button class="choice choice-no" data-choice="no">
+              <span class="choice-icon">⌁</span>
+              <span>Not really...</span>
+            </button>
+          </div>
+          <p class="helper-text" id="choiceMessage">There is a right answer, obviously.</p>
+        </div>
+
+        <div class="screen" data-screen="2">
+          <div class="eyebrow"><span class="sparkle">✦</span> okay, one more thing</div>
+          <h2>You make ordinary days<br /><em>feel like a celebration.</em></h2>
+          <p class="lead">
+            Thank you for being my safe place, my favourite person, and the one
+            who makes everything a little softer.
+          </p>
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p>Life is better with a Chechi in it.</p>
+            <span class="quote-caption">— something I should say more often</span>
+            <span class="quote-doodle">♡</span>
+          </div>
+          <button class="primary-button next-button">
+            There’s more <span>↗</span>
+          </button>
+        </div>
+
+        <div class="screen final-screen" data-screen="3">
+          <div class="final-flower" aria-hidden="true">✿</div>
+          <div class="eyebrow"><span class="sparkle">✦</span> the important part</div>
+          <h2>Chechi,<br /><em>sorry.</em></h2>
+          <p class="final-message">
+            I really miss you.<br />
+            <strong>I love you so much.</strong>
+          </p>
+          <p class="signature">always yours <span>♡</span></p>
+          <button class="text-button restart-button">Read it again ↻</button>
+          <div class="confetti" aria-hidden="true">
+            <span>✦</span><span>•</span><span>♡</span><span>✦</span><span>•</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-note">made with a full heart <span>♡</span></footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
